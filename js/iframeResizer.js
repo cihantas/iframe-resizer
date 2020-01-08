@@ -1302,9 +1302,9 @@
       function chkType() {
         if (!element.tagName) {
           throw new TypeError('Object is not a valid DOM element')
-        } else if ('IFRAME' !== element.tagName.toUpperCase()) {
+        } else if ('OBJECT' !== element.tagName.toUpperCase()) {
           throw new TypeError(
-            'Expected <IFRAME> tag, found <' + element.tagName + '>'
+            'Expected <OBJECT> tag, found <' + element.tagName + '>'
           )
         }
       }
